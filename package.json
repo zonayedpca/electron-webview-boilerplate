@@ -14,7 +14,7 @@
 		"postinstall": "electron-builder install-app-deps",
 		"start": "electron .",
 		"pack": "electron-builder --dir",
-		"dist": "electron-builder --macos --linux --windows",
+		"dist": "electron-builder --macos --linux --windows --publish always",
 		"release": "np"
 	},
 	"license": "MIT",
