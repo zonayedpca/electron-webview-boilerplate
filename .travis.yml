@@ -1,5 +1,5 @@
 # require GitHub token to be present as the Environment Variable
-if: env(GH_TOKENN) = true
+if: env(GH_TOKEN) = true
     os: osx
     osx_image: xcode10.2
     language: node_js
