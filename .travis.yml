@@ -1,8 +1,10 @@
-os: osx
-osx_image: xcode10.2
-language: node_js
-node_js: "12"
-script:
-  - npm test
-after_success:
-  - npm run dist
+# require GitHub token to be present as the Environment Variable
+if: env(GH_TOKENN) = true
+    os: osx
+    osx_image: xcode10.2
+    language: node_js
+    node_js: "12"
+    script:
+    - npm test
+    after_success:
+    - npm run dist
