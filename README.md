@@ -31,3 +31,19 @@ Now push your project:
 git push origin master
 ```
 
+Get back to Travis CI and Find your repository. Then Go to More Options > Settings and Add your GitHub Personal Access Token(with scope of repo) as an Environment Variable ```GH_TOKEN```. If everything is alright, then you can Trigger a custom build from Travis CI. Go to **More Options > Trigger build > Trigger Custom Build** Once everything finished, you will get a see a draft release of your app into your GitHub repo. 
+
+## Configuration
+You can
+- Add ```.html``` file as your app's UI
+- Or you can add your website to be shown inside your App
+- You can set up environment variables inside Travis CI to configure your App
+
+### Environment Variables
+**CLIENT**: If you want to show your website inside the app. Simply put ```CLIENT``` environment variable with your website URL as value. Example: Key: ```CLIENT```, Value: ```https://zonayed.me```
+**HEIGHT**: To set the height of your app in px. Example: Key:```HEIGHT```, Value: ```300```
+**WIDTH**: To set the width of your app in px. Example: Key:```WIDTH```, Value: ```300```
+
+## Roadmap
+[] Add More Configuration
+[] Automate the whole process
