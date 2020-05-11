@@ -7,7 +7,7 @@ app.on("ready", () => {
 		height: 600,
 		width: 480,
 	});
-	mainWindow.loadURL("https://js.zonayed.me");
+	mainWindow.loadURL("https://zonayed.me");
 });
 
 app.on("window-all-closed", () => {
