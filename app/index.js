@@ -1,13 +1,15 @@
-const { app, BrowserWindow } = require("electron");
+const { app } = require("electron");
+
+const MyBrowserWindow = require("./module/MyBrowserWindow");
 
 let mainWindow;
 
 app.on("ready", () => {
-	mainWindow = new BrowserWindow({
+	mainWindow = new MyBrowserWindow({
 		height: 600,
 		width: 480,
 	});
-	mainWindow.loadURL("https://zonayed.me");
+	mainWindow.loadURL("https://js.zonayed.me");
 });
 
 app.on("window-all-closed", () => {
