@@ -1,0 +1,14 @@
+{
+  "name": "electron-webview-boilerplate",
+  "version": "1.0.0",
+  "description": "A Simple Electron Boilerplate to load your website/webpage as a Desktop Application",
+  "main": "app.js",
+  "repository": "https://github.com/zonayedpca/electron-webview-boilerplate",
+  "author": "Zonayed Ahmed(zonayedpca)",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^8.2.5",
+    "electron-builder": "^22.6.0",
+    "np": "^6.2.3"
+  }
+}
