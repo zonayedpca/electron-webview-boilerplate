@@ -1,14 +1,59 @@
 {
-  "name": "electron-webview-boilerplate",
-  "version": "1.0.0",
-  "description": "A Simple Electron Boilerplate to load your website/webpage as a Desktop Application",
-  "main": "app.js",
-  "repository": "https://github.com/zonayedpca/electron-webview-boilerplate",
-  "author": "Zonayed Ahmed(zonayedpca)",
-  "license": "MIT",
-  "devDependencies": {
-    "electron": "^8.2.5",
-    "electron-builder": "^22.6.0",
-    "np": "^6.2.3"
-  }
+	"name": "electron-webview-boilerplate",
+	"productName": "Electron Webview Boilerplate",
+	"version": "1.0.0",
+	"description": "A Simple Electron Boilerplate to load your website/webpage as a Desktop Application",
+	"main": "app/index.js",
+	"repository": "https://github.com/zonayedpca/electron-webview-boilerplate",
+	"author": {
+		"name": "Zonayed Ahmed",
+		"email": "contact@zonayed.me",
+		"url": "https://zonayed.me"
+	},
+	"scripts": {
+		"postinstall": "electron-builder install-app-deps",
+		"start": "electron .",
+		"pack": "electron-builder --dir",
+		"dist": "electron-builder --macos --linux --windows",
+		"release": "np"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"electron": "^8.2.5",
+		"electron-builder": "^22.6.0",
+		"np": "^6.2.3"
+	},
+	"np": {
+		"publish": false,
+		"releaseDraft": false
+	},
+	"build": {
+		"appId": "com.electron.WebviewBoilerplate",
+		"mac": {
+			"category": "public.app-category.utilities",
+			"darkModeSupport": true
+		},
+		"dmg": {
+			"iconSize": 160,
+			"contents": [
+				{
+					"x": 180,
+					"y": 170
+				},
+				{
+					"x": 480,
+					"y": 170,
+					"type": "link",
+					"path": "/Applications"
+				}
+			]
+		},
+		"linux": {
+			"target": [
+				"AppImage",
+				"deb"
+			],
+			"category": "Viewer"
+		}
+	}
 }
