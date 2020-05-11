@@ -19,7 +19,6 @@
 	},
 	"license": "MIT",
 	"devDependencies": {
-		"dotenv": "^8.2.0",
 		"electron": "^8.2.5",
 		"electron-builder": "^22.6.0",
 		"np": "^6.2.3"
@@ -56,5 +55,8 @@
 			],
 			"category": "Viewer"
 		}
+	},
+	"dependencies": {
+		"dotenv": "^8.2.0"
 	}
 }
