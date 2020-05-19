@@ -9,7 +9,7 @@ Quickly turn your Website, Web Application, Webpage into a usable Cross-platform
 It's a template repo, so you can just simply make it yours by clicking on 'Use this template':
 ![usethistemplate](https://user-images.githubusercontent.com/18544717/82370696-cd37fa80-9a3a-11ea-839f-3d962305f503.gif)
 Get your personal [GitHub token](https://github.com/settings/tokens) from here with the scope of **repo**:
-![githubaccesstoken](https://user-images.githubusercontent.com/18544717/82371461-0cb31680-9a3c-11ea-8406-1e590c71565f.gif)
+![newgithubtoken](https://user-images.githubusercontent.com/18544717/82375820-f5c3f280-9a42-11ea-842e-85653221d7cc.gif)
 Login to [TravisCI](https://travis-ci.org/) using your GitHub account and Set your GitHub token as Environment variable ```GH_TOKEN```:
 ![setghtoken](https://user-images.githubusercontent.com/18544717/82373992-41c16800-9a40-11ea-98fb-8cf715225cda.gif)
 ## If you like things manually...
