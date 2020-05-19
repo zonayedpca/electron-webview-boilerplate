@@ -5,7 +5,11 @@ Quickly turn your Website, Web Application, Webpage into a usable Cross-platform
 - Travis CI Account(Make sure you allow Travis CI to build your respective repo)
 - GitHub access token(to be set as an environment variable in TravisCI)
 
-## Quick Start
+## Quick Start(Really Quick)
+It's a template repo, so you can just simply make it yours by clicking on 'Use this template':
+![usethistemplate](https://user-images.githubusercontent.com/18544717/82370696-cd37fa80-9a3a-11ea-839f-3d962305f503.gif)
+
+## If you like things manually...
 Clone this repo:
 ```
 git clone https://github.com/zonayedpca/electron-webview-boilerplate.git
