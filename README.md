@@ -57,5 +57,5 @@ You can utilize these environment variable inside TravisCI(Same as setting ```GH
 **WIDTH**: To set the width of your app in px. Example: Key:```WIDTH```, Value: ```300```
 
 ## Roadmap
-- [] Add More Configuration
-- [] Automate the whole process
+- [ ] Add More Configuration
+- [ ] Automate the whole process
