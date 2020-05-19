@@ -8,7 +8,11 @@ Quickly turn your Website, Web Application, Webpage into a usable Cross-platform
 ## Quick Start(Really Quick)
 It's a template repo, so you can just simply make it yours by clicking on 'Use this template':
 ![usethistemplate](https://user-images.githubusercontent.com/18544717/82370696-cd37fa80-9a3a-11ea-839f-3d962305f503.gif)
-
+Get your personal [GitHub token](https://github.com/settings/tokens) from here with the scope of **repo**:
+![githubaccesstoken](https://user-images.githubusercontent.com/18544717/82371461-0cb31680-9a3c-11ea-8406-1e590c71565f.gif)
+Login to [TravisCI](https://travis-ci.org/) using your GitHub account and Set your GitHub token as Environment variable ```GH_TOKEN``` and trigger a custom build:
+![triggercustombuild](https://user-images.githubusercontent.com/18544717/82372327-a0391700-9a3d-11ea-9237-efe50e19b897.gif)
+Once your build finishes without any error, you will be able to find a draft release of your App in Your GitHub Release. You can add some description and release it publicly.  
 ## If you like things manually...
 Clone this repo:
 ```
@@ -44,10 +48,11 @@ You can
 - You can set up environment variables inside Travis CI to configure your App
 
 ### Environment Variables
+You can utilize these environment variable inside TravisCI(Same as setting ```GH_TOKEN``` that we have done just now):
 **CLIENT**: If you want to show your website inside the app. Simply put ```CLIENT``` environment variable with your website URL as value. Example: Key: ```CLIENT```, Value: ```https://zonayed.me```
 **HEIGHT**: To set the height of your app in px. Example: Key:```HEIGHT```, Value: ```300```
 **WIDTH**: To set the width of your app in px. Example: Key:```WIDTH```, Value: ```300```
 
 ## Roadmap
-[] Add More Configuration
-[] Automate the whole process
+- [] Add More Configuration
+- [] Automate the whole process
