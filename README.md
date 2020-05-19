@@ -47,7 +47,8 @@ Additionally, You can:
 - Add ```.html``` file as your app's UI
 - Or you can add your website to be shown inside your App
 - You can set up environment variables inside Travis CI to configure your App
-Any changes you made on your repo, TravisCI will automatically trigger a build. Once a  Make sure  Once everything finished, you will get a see a draft release of your app into your GitHub repo.
+
+Any changes you made on your repo, TravisCI will automatically trigger a build. Once a version of an App is released, any changes with the same version will not gonna deploy new release. If you want to release your updates, then please update the ```version``` from ```package.json```,  then only you will get to see new version released as a new draft once again.
 ### Environment Variables
 You can utilize these environment variable inside TravisCI(Same as setting ```GH_TOKEN``` that we have done just now):
 **CLIENT**: If you want to show your website inside the app. Simply put ```CLIENT``` environment variable with your website URL as value. Example: Key: ```CLIENT```, Value: ```https://zonayed.me```
